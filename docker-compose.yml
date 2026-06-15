@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  wave-service:
+    build: .
+    ports:
+      - "8080:8000"
+    container_name: wave-picking-service
+    restart: unless-stopped
